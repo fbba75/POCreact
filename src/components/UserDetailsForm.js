@@ -4,7 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import Button from '@material-ui/core/Button';
-import MyButton from './GenderButton';
+import GenderButtom from './GenderButton';
 
 export class UserDetailsForm extends Component {
     continue = e => {
