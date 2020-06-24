@@ -6,6 +6,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Button from '@material-ui/core/Button';
 import GenderButtom from './GenderButton';
 
+//It's where user enter its information 
+
 export class UserDetailsForm extends Component {
     continue = e => {
         e.preventDefault();
@@ -22,45 +24,54 @@ export class UserDetailsForm extends Component {
                     <br />
                     <h2>Choose your gender</h2>
                     <GenderButtom></GenderButtom>
+                     <br/>
+                    <TextField 
+                        id="age"
+                        hintText="Choose your age" 
+                        floatingLabelText="Age"
+                        onChange={handleChange("age")}
+                        defaultValue={values.age}
+                    />
                     <br/>
                       <TextField 
-                        hintText="Choose your country" 
-                        floatingLabelText="Country"
+                        hintText="Country list" 
+                        floatingLabelText="Choose your country"
                         onChange={handleChange('userCountry')}
                         defaultValue={values.userCountry}
                     />
                     <br/>
-                    <TextField 
-                        hintText="Choose your age" 
-                        floatingLabelText="Age"
-                        onChange={handleChange('age')}
-                        defaultValue={values.age}
-                    />
-                    <br/>
                     <usePlacesAutocomplete 
-                        hintText="Choose your city" 
-                        floatingLabelText="Destination"
+                        hintText="Destination autocomplete" 
+                        floatingLabelText="Choose your city"
                         onChange={handleChange('destinationCityName')}
                         defaultValue={values.destinationCityName}
                     />
                     <br/>
                     <TextField 
-                        hintText="Choose your city" 
-                        floatingLabelText="Destination"
+                        hintText="Destination autocomplete" 
+                        floatingLabelText="Choose your city"
                         onChange={handleChange('destinationCityName')}
                         defaultValue={values.destinationCityName}
                     />
                     <br/>
+                    <br/>
                     <TextField 
-                        hintText="Choose your center of interest" 
-                        floatingLabelText="Center of interest"
+                        hintText="Date picker" 
+                        floatingLabelText="Choose your date"
                         onChange={handleChange('userCenterOfInterest')}
                         defaultValue={values.userCenterOfInterest}
                     />
                     <br/>
                     <TextField 
-                        hintText="Choose your type of traveler" 
-                        floatingLabelText="Type of Traveler"
+                        hintText="Center of interest choices" 
+                        floatingLabelText="Choose your center of interest"
+                        onChange={handleChange('userCenterOfInterest')}
+                        defaultValue={values.userCenterOfInterest}
+                    />
+                    <br/>
+                    <TextField 
+                        hintText="Type of traveler list" 
+                        floatingLabelText="Choose your type of traveler"
                         onChange={handleChange('travelerType')}
                         defaultValue={values.travelerType}
                     />

@@ -49,13 +49,13 @@ const GenderButtom = withStyles(styles)(MyButtonRaw);
 export default function AdaptingHOC() {
   return (
     <React.Fragment>
-      <MyButton 
+      <GenderButtom 
       color="blue"
       label="Homme"
       primary={true}
-      >Homme</MyButton>
+      >Homme</GenderButtom>
       <GenderButtom color="red">Femme</GenderButtom>
-      <MyButton color="grey">Autre</MyButton>
+      <GenderButtom color="grey">Autre</GenderButtom>
     </React.Fragment>
   );
 }
