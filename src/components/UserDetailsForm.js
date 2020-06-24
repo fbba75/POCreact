@@ -3,8 +3,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import Button from '@material-ui/core/Button';
 import GenderButtom from './GenderButton';
+import country-select-demo from './UserCountrySelector';
 
 //It's where user enter its information 
 
@@ -31,7 +31,13 @@ export class UserDetailsForm extends Component {
                         floatingLabelText="Age"
                         onChange={handleChange("age")}
                         defaultValue={values.age}
+                        characterLimit={3}
+                        type="number"
+                       onInput={(e)=>{ 
+                      e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,3)}}
                     />
+                    <br/>
+                    <country-select-demo />
                     <br/>
                       <TextField 
                         hintText="Country list" 

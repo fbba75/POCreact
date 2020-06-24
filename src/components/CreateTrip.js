@@ -3,6 +3,8 @@ import UserDetailsForm from './UserDetailsForm';
 import Confirm from './Confirm';
 import RouteDetails from './RouteDetails';
 
+//it's full create trip form with different steps
+
 export class CreateTrip extends Component {
     state = {
         step: 1,

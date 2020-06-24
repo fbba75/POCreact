@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 
+//Where user can see the itinerary
+
 export class RouteDetails extends Component {
     continue = e => {
         e.preventDefault();

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+//Gender button
 
 const backgroundStyle = {
   red : 'linear-gradient(45deg, #FE6B8B 30%, #9b1e44 90%)',
